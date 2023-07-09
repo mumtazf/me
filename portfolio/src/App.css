@@ -1,42 +1,168 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navBar {
+  position: sticky;
+  top: 0;
+  background-color: #5fb45f;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.homeButton a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+
+}
+
+.navOptions a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s; 
+}
+
+.navOptions a:hover{
+  background-color: #9641b4;
+}
+
+.navOptions a:active{
+  background-color: white;
+  color: black;
+}
+
+/* For Home */
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  flex-direction: row;
+}
+
+.aboutMe #hi{
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMe > .about h2{
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 10vh;
+}
+
+.aboutMe img {
+  width: 20em; /* Set the width */
+  height: 30em; /* Maintain aspect ratio */
+}
+
+.aboutMe > .about {
+  margin-right: 5em; /* Adjust the right margin as desired */
+}
+
+/* For Intro */
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  flex-direction: row;
+}
+
+.intro_box, .experience_box{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.intro_box > h2, .experience_box > h2{
+  font-size: 10vh;
+}
+
+.intro_para {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro_para  img {
+  width: 20em; /* Set the width */
+  height: 20em; /* Maintain aspect ratio */
+}
+
+.intro_para p{
+  margin-top: 10vh;
+  font-size: 2.5vh;
+}
+
+.experience{
+  display: flex;
+  align-items: start;
+  justify-content: left;
+}
+
+.experience_cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .navOptions a {
+    font-size: 1.2em; /* Adjust the font size for smaller screens */
+    margin-left: 0.5em; /* Adjust the margin as needed */
   }
-  to {
-    transform: rotate(360deg);
+
+  .aboutMe > .about {
+    margin-left: 4em; /* Adjust the value for smaller screens */
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .aboutMe img {
+    width: 70%; /* Set the width */
+    height: 100%; /* Maintain aspect ratio */
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .intro_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-.read-the-docs {
-  color: #888;
+  .intro_para p {
+    margin-top: 5%; 
+    font-size: 2vh; 
+  }
+
+  .intro_para img {
+    width: 40%; 
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro_para {
+    display: flex;
+    flex-direction: column; /* Change to column on smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro_box > h2 {
+    font-size: 8vw; 
+  }
+  
 }

@@ -1,14 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
+import Nav from "./Components/Nav"
+import Home from './Components/Home'
+import Intro from './Components/Intro'
+import Blog from './Components/Blog'
+import Experience from './Components/Experience'
+import Contact from './Components/Contact'
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-     <p>Bismillah</p>
+    <div>
+    <Nav />
+
+    <div id="home">
+      <Home />
     </div>
+
+    <div id="intro">
+      <Intro />
+    </div>
+
+    <div id="experience">
+      <Experience />
+    </div>
+
+    <div id="blog">
+      <Blog />
+    </div>
+    
+    <div id="contact">
+      <Contact />
+    </div>
+  </div>
   )
 }
 

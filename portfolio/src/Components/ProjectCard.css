@@ -1,0 +1,27 @@
+.card{
+    border: 0.2em solid #ccc;
+    padding: 2vh;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 50%;
+}
+
+.header{
+    display: grid;
+}
+
+.title {
+    grid-column: 1;
+}
+  
+.logo {
+    grid-column: 2;
+    justify-self: end;
+}
+  
+  
+  
+  
+  
+  
+  
