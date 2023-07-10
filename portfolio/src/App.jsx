@@ -29,9 +29,13 @@ function App() {
     <div id="blog">
       <Blog />
     </div>
-    
+
     <div id="contact">
       <Contact />
+    </div>
+
+    <div className='footer'>
+      Made with ❤️ by Mumtaz
     </div>
   </div>
   )

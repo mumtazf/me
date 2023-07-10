@@ -7,7 +7,7 @@ const Home = () =>{
                 <h2>Hi there!</h2>
                 <p>Welcome to my little home on the internet.<br/> It’s a work-in-progress and continues to grow as I do.</p>
             </div>
-            <div>
+            <div className='aboutImage'>
                 <img src = {introImage} alt = "bitmoji saying hi"/>
             </div>
     
