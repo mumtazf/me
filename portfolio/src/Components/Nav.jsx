@@ -6,7 +6,7 @@ const Nav = () => {
     return (
         <div className="navBar">
             <div className="homeButton">
-            <Link to = "/">Mumtaz Fatima</Link>
+            <a href= "#home">Mumtaz Fatima</a>
             </div>
 
             <div className="navOptions">

@@ -1,23 +1,65 @@
 import './ProjectCard.css'
+import {useState, useEffect} from 'react'
 
-const ProjectCard = () => {
+const ProjectCard = ({project}) => {
+
+    
+    const [isExpanded, setIsExpanded] = useState(false);
+    
+    const handleExpand = () => {
+        setIsExpanded(true);
+      };
+
+      const handleEscapeKeyPress = (event) => {
+        if (event.keyCode === 27) { // Escape key code
+          setIsExpanded(false);
+        }
+      };
+      
+      const handleCloseClick = () => {
+        setIsExpanded(false);
+      };
+      
+      useEffect(() => {
+        document.addEventListener("keydown", handleEscapeKeyPress);
+        return () => {
+          document.removeEventListener("keydown", handleEscapeKeyPress);
+        };
+      }, []);
+      
     return (
         <div className="card">
             <div className='header'>
                 <div className="title">
-                    <h2>Experience Name</h2>
+                    <h2>{project.experience}</h2>
                 </div>
                 <div className="logo">
-                    <img src="logo.png" alt="Company Logo" />
+                    <img src={project.logo} alt="Company Logo" />
                 </div>
         </div>
+
           <div className="details">
-            <p>Location, Year</p>
+            <p>{project.year}</p>
+            <p>{project.location}</p>
           </div>
+
           <div className="technologies">
-            <p>Technologies Used:</p>
+            <p>Technologies Used: {project.technologies}</p>
           </div>
-          <button className="more-info-btn">More Info</button>
+
+          <div class = "button-container">
+            <button className="more-info-btn" onClick={handleExpand}>More Info</button>
+          </div>
+
+        {isExpanded && (
+            <div className="expanded-card-container">
+                <div className = "more-info-card">
+                    {project.moreInfo}
+                <button className="close-button" onClick={handleCloseClick}>Close</button>
+                </div>
+            </div>
+        )}
+
         </div>
       );
     

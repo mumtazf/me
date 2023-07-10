@@ -79,14 +79,14 @@ body {
   flex-direction: row;
 }
 
-.intro_box, .experience_box{
+.intro_box{
   display: flex;
   flex-direction: column;
   margin-left: 5em;
   margin-right: 5em;
 }
 
-.intro_box > h2, .experience_box > h2{
+.intro_box > h2, .experience_box > h2, .blog_box > h2, .contact_box > h2{
   font-size: 10vh;
 }
 
@@ -106,17 +106,108 @@ body {
 }
 
 .experience{
-  display: flex;
-  align-items: start;
-  justify-content: left;
-}
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+ }
 
 .experience_cards{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; 
-  
+  gap: 1.5em;
+}
+
+.experience_box{
+  display: flex;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.experience_box > h2{
+  justify-self: left;
+}
+
+.loadMore{
+  display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3b6a3b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+/* FOR BLOG */
+.blog{
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.blog_box, .contact_box {
+  display: flex;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.blog_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 1.5em;
+}
+
+.blog > h2, .contact > h2{
+  justify-self: left;
+}
+
+/* CONTACT CSS some above too */
+.contact {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contact_cards {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.contact_info .linkedin,
+.contact_info .email {
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_info .linkedin img,
+.contact_info .email img {
+  height: 5em;
+}
+
+.contact_img {
+  margin-left: auto;
+  margin-right: 10%;
+  width: 15em;
+  height: 20em;
 }
 
 /* MEDIA QUERIES */
@@ -128,6 +219,12 @@ body {
 
   .aboutMe > .about {
     margin-left: 4em; /* Adjust the value for smaller screens */
+  }
+
+  .aboutMe > .about h2{
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 5vh;
   }
 
   .aboutMe img {
@@ -164,5 +261,46 @@ body {
   .intro_box > h2 {
     font-size: 8vw; 
   }
+
+  .experience_box{
+    display: flex;
+    flex-direction: column; /* Change to column on smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
   
+  .experience_box > h2 {
+    font-size: 8vw; 
+  }
+
+  .blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    flex-direction: column;
+  }
+
+  .contact_img {
+    display:none;
+  }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    flex-direction: column;
+  }
+
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact_cards {
+    display: flex;
+    flex-direction: row;
+  }
 }

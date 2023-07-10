@@ -6,9 +6,9 @@ const Layout = () => {
       <nav>
         <ul>
           <li className="home-link" key="home-button">
-            <Link to="/">
+            <a href ="#home">
               Home
-            </Link>
+            </a>
           </li>
           <li>
           <a href = "#aboutme">
