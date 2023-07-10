@@ -1,4 +1,4 @@
-import laptopImage from '../assets/laptop_wave.png'
+import laptopImage from '../assets/laptop_wave.webp'
 
 const Intro = () => {
 

@@ -1,4 +1,4 @@
-import introImage from '../assets/bitmoji_hi.png'
+import introImage from '../assets/bitmoji_hi.webp'
 
 const Home = () =>{
     return(

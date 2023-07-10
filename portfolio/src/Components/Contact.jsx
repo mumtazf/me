@@ -1,4 +1,4 @@
-import contactImage from '../assets/contact.png'
+import contactImage from '../assets/contact.webp'
 import emailIcon from '../assets/email.png'
 import linkedinIcon from '../assets/linkedin.png'
 
