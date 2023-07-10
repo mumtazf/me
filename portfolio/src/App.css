@@ -52,6 +52,7 @@ body {
 .aboutMe #hi{
   display: flex;
   flex-direction: column;
+  font-size: 2.5vh;
 }
 
 .aboutMe > .about h2{
@@ -196,6 +197,7 @@ body {
   margin-bottom: 1.5em;
   display: flex;
   flex-direction: row;
+  font-size: 2.5vh;
 }
 
 .contact_info .linkedin img,
