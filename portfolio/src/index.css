@@ -1,7 +1,7 @@
 .navBar {
   position: sticky;
   top: 0;
-  background-color: lightgreen;
+  background-color: #2c702c;
   height: 2em;
   display: flex;
   justify-content: space-between;
