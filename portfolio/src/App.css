@@ -194,7 +194,8 @@ body {
 }
 
 .contact_info .linkedin,
-.contact_info .email {
+.contact_info .email, 
+.contact_info .github {
   margin-bottom: 1.5em;
   display: flex;
   flex-direction: row;
@@ -202,7 +203,8 @@ body {
 }
 
 .contact_info .linkedin img,
-.contact_info .email img {
+.contact_info .email img, 
+.contact_info .github img{
   height: 5em;
   width: 5em;
 }
