@@ -1,6 +1,7 @@
 import contactImage from '../assets/good_one.webp'
 import emailIcon from '../assets/email.png'
 import linkedinIcon from '../assets/linkedin.png'
+import githubIcon from '../assets/github_icon.webp'
 
 const Contact = () =>{
     return(
@@ -24,6 +25,13 @@ const Contact = () =>{
                     <img src= {emailIcon} alt="Email contact"/>
                     </a>
                 <p>Send me an <a href="mailto:mumtazsubscriptions@gmail.com"> email </a></p>
+                </div>
+
+                <div className='email'>
+                <a href="www.github.com/mumtazf">
+                    <img src= {githubIcon} alt="Github contact"/>
+                    </a>
+                <p>Find me on <a href="www.github.com/mumtazf"> Github </a></p>
                 </div>
 
             </div>
