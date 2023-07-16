@@ -17,45 +17,45 @@ const Experience = () =>{
     const experienceData = [
         {
             id: 1,
-            experience: "",
+            experience: "SWE Intern",
             companyName : "Mastercard",
             location: "",
-            year: "",
+            year: "2023",
             logo: "",
-            technologies: "",
-            moreInfo: ["hi","",""]
+            technologies: "Java, Spring, Spring Boot, Hadoop, AWS S3, Git",
+            moreInfo: ["","",""]
         },
 
         {
             id: 2,
-            experience: "",
+            experience: "Machine Learning Fellow",
             companyName : "MIT",
             location: "Cambridge, MA",
             year: "June 2022 - May 2023",
             logo: "",
-            technologies: "",
+            technologies: "Python, ML models - CLIP, XGBoost, Computer Vision, NLP (spaCy, NLTK, gensim), Feature engineering, Jupyter Notebook, Google Colab",
             moreInfo: ["","",""]
         },
 
         {
             id: 3,
-            experience: "",
+            experience: "ML Engineering Project",
             companyName : "MIT-IBM Watson AI Lab",
-            location: "",
-            year: "",
+            location: "Cambridge, MA",
+            year: "August 2022 - December 2022",
             logo: "",
-            technologies: "",
+            technologies: "Computer Vision (CLIP model), Model Evaluation (accuracy, precision, recall, F1 score, top-K accuracy); gTTS, React Native",
             moreInfo: ["","",""]
         },
 
         {
             id: 4,
-            experience: "",
+            experience: "Responsible AI Fellow",
             companyName : "Google",
-            location: "",
-            year: "",
+            location: "Mountain View, CA (Remote)",
+            year: "April 2022 - May 2022",
             logo: "",
-            technologies: "",
+            technologies: "AI algorithms, Google Colab, ATS systems",
             moreInfo: ["","",""]
         }, 
 
@@ -92,3 +92,4 @@ const Experience = () =>{
 }
 
 export default Experience;
+
