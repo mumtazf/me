@@ -1,11 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import {useState} from 'react'
 
-import GOOGLE_LOGO from "../assets/google_logo.webp";
-import MIT_LOGO from "../assets/MIT_logo.webp";
-import MASTERCARD_LOGO from "../assets/mastercard.webp";
-import MIT_IBM_LOGO from "../assets/mit_ibm.webp";
-
 const Experience = () =>{
     const [visibleProjects, setVisibleProjects] = useState(4);
 
@@ -26,7 +21,7 @@ const Experience = () =>{
             companyName : "Mastercard",
             location: "",
             year: "2023",
-            logo: MASTERCARD_LOGO,
+            logo: '../assets/mastercard.webp',
             technologies: "Java, Spring, Spring Boot, Hadoop, AWS S3, Git",
             moreInfo: ["","",""]
         },
@@ -37,7 +32,7 @@ const Experience = () =>{
             companyName : "MIT",
             location: "Cambridge, MA",
             year: "June 2022 - May 2023",
-            logo: MIT_LOGO,
+            logo: '../assets/MIT_logo.webp',
             technologies: "Python, ML models - CLIP, XGBoost, Computer Vision, NLP (spaCy, NLTK, gensim), Feature engineering, Jupyter Notebook, Google Colab",
             moreInfo: ["","",""]
         },
@@ -48,7 +43,7 @@ const Experience = () =>{
             companyName : "MIT-IBM Watson AI Lab",
             location: "Cambridge, MA",
             year: "August 2022 - December 2022",
-            logo: MIT_IBM_LOGO,
+            logo: '../assets/mit_ibm.webp',
             technologies: "Computer Vision (CLIP model), Model Evaluation (accuracy, precision, recall, F1 score, top-K accuracy); gTTS, React Native",
             moreInfo: ["","",""]
         },
@@ -59,7 +54,7 @@ const Experience = () =>{
             companyName : "Google",
             location: "Mountain View, CA (Remote)",
             year: "April 2022 - May 2022",
-            logo: GOOGLE_LOGO,
+            logo: '../assets/google_logo.webp',
             technologies: "AI algorithms, Google Colab, ATS systems",
             moreInfo: ["","",""]
         }, 
