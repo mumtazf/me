@@ -54,7 +54,7 @@ const Experience = () =>{
             companyName : "Google",
             location: "Mountain View, CA (Remote)",
             year: "April 2022 - May 2022",
-            logo: '../assets/google_logo.webp',
+            logo: "../assets/google_logo.webp",
             technologies: "AI algorithms, Google Colab, ATS systems",
             moreInfo: ["","",""]
         }, 
@@ -62,7 +62,7 @@ const Experience = () =>{
         {
             id: 5,
             experience: "",
-            companyName : "Google",
+            companyName : "",
             location: "",
             year: "",
             logo: "",

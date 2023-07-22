@@ -71,4 +71,8 @@
     height: 50%;
     background-color: white;
 }
-  
+
+.logo img{
+    width: 7em;
+    height: 6em;
+}

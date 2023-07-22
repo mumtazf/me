@@ -1,7 +1,7 @@
-import contactImage from '../assets/good_one.webp'
-import emailIcon from '../assets/email.png'
-import linkedinIcon from '../assets/linkedin.png'
-import githubIcon from '../assets/github_icon.png'
+import contactImage from '/assets/good_one.webp'
+import emailIcon from '/assets/email.png'
+import linkedinIcon from '/assets/linkedin.png'
+import githubIcon from '/assets/github_icon.png'
 
 const Contact = () =>{
     return(
