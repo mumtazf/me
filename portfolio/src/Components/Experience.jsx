@@ -1,10 +1,10 @@
 import ProjectCard from "./ProjectCard";
 import {useState} from 'react'
 
-import {GOOGLE_LOGO} from "../assets/google_logo.webp";
-import {MIT_LOGO} from "../assets/MIT_logo.webp";
-import {MASTERCARD_LOGO} from "../assets/mastercard.webp";
-import {MIT_IBM_LOGO} from "../assets/mit_ibm.webp";
+import GOOGLE_LOGO from "../assets/google_logo.webp";
+import MIT_LOGO from "../assets/MIT_logo.webp";
+import MASTERCARD_LOGO from "../assets/mastercard.webp";
+import MIT_IBM_LOGO from "../assets/mit_ibm.webp";
 
 const Experience = () =>{
     const [visibleProjects, setVisibleProjects] = useState(4);
