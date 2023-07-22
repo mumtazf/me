@@ -1,6 +1,11 @@
 import ProjectCard from "./ProjectCard";
 import {useState} from 'react'
 
+import {GOOGLE_LOGO} from "../assets/google_logo.webp";
+import {MIT_LOGO} from "../assets/MIT_logo.webp";
+import {MASTERCARD_LOGO} from "../assets/mastercard.webp";
+import {MIT_IBM_LOGO} from "../assets/mit_ibm.webp";
+
 const Experience = () =>{
     const [visibleProjects, setVisibleProjects] = useState(4);
 
@@ -21,40 +26,40 @@ const Experience = () =>{
             companyName : "Mastercard",
             location: "",
             year: "2023",
-            logo: "",
+            logo: MASTERCARD_LOGO,
             technologies: "Java, Spring, Spring Boot, Hadoop, AWS S3, Git",
             moreInfo: ["","",""]
         },
 
         {
             id: 2,
-            experience: "Machine Learning Fellow",
+            experience: "Machine Learning Fellow @ MIT",
             companyName : "MIT",
             location: "Cambridge, MA",
             year: "June 2022 - May 2023",
-            logo: "",
+            logo: MIT_LOGO,
             technologies: "Python, ML models - CLIP, XGBoost, Computer Vision, NLP (spaCy, NLTK, gensim), Feature engineering, Jupyter Notebook, Google Colab",
             moreInfo: ["","",""]
         },
 
         {
             id: 3,
-            experience: "ML Engineering Project",
+            experience: "ML Engineering Contributor",
             companyName : "MIT-IBM Watson AI Lab",
             location: "Cambridge, MA",
             year: "August 2022 - December 2022",
-            logo: "",
+            logo: MIT_IBM_LOGO,
             technologies: "Computer Vision (CLIP model), Model Evaluation (accuracy, precision, recall, F1 score, top-K accuracy); gTTS, React Native",
             moreInfo: ["","",""]
         },
 
         {
             id: 4,
-            experience: "Responsible AI Fellow",
+            experience: "Responsible AI Fellow @ Google",
             companyName : "Google",
             location: "Mountain View, CA (Remote)",
             year: "April 2022 - May 2022",
-            logo: "",
+            logo: GOOGLE_LOGO,
             technologies: "AI algorithms, Google Colab, ATS systems",
             moreInfo: ["","",""]
         }, 
