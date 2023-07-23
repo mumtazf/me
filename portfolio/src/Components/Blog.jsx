@@ -5,7 +5,7 @@ const Blog = () =>{
             <h2>Blog</h2>
         </div>
         <div className="blog_cards">
-        <p>UNDER PROGRESS</p>
+        <p>UNDER PROGRESS 🚧 </p>
     </div>
     </div>
     )

@@ -44,7 +44,7 @@ const ProjectCard = ({project}) => {
           </div>
 
           <div className="technologies">
-            <p>Technologies Used: {project.technologies}</p>
+            <p><b>Technologies Used: </b> {project.technologies}</p>
           </div>
 
           <div class = "button-container">

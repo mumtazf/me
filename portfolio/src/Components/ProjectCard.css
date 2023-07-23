@@ -9,6 +9,10 @@
   transition: box-shadow 0.3s ease;
 }
 
+.card:hover{
+        box-shadow: 0 1em 1em rgba(14, 134, 46, 0.641);
+}
+
 .header{
     display: grid;
 }
@@ -39,7 +43,8 @@
 }
       
 .more-info-btn:hover {
-    background-color: #449b44;
+    background-color: #449b44;       
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
       
 .more-info-btn:active {
@@ -75,4 +80,11 @@
 .logo img{
     width: 7em;
     height: 6em;
+}
+
+@media (max-width: 768px) {
+    .logo img{
+        width: 4em;
+        height: 4em;
+    }
 }

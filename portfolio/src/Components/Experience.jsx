@@ -17,7 +17,7 @@ const Experience = () =>{
     const experienceData = [
         {
             id: 1,
-            experience: "SWE Intern",
+            experience: "SWE Intern @ Mastercard",
             companyName : "Mastercard",
             location: "",
             year: "2023",
@@ -61,7 +61,17 @@ const Experience = () =>{
 
         {
             id: 5,
-            experience: "",
+            experience: "Web Dev Teaching Assistant",
+            companyName : "Girls Who Code",
+            location: "New York City, New York (Remote)",
+            year: "June 2022 - August 2022",
+            logo: "",
+            technologies: "JavaScript, HTML/CSS, Accessible Web Development, Git",
+            moreInfo: ["","",""]
+        }, 
+        {
+            id: 6,
+            experience: "Student Researcher",
             companyName : "",
             location: "",
             year: "",
