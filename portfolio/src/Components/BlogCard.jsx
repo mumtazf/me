@@ -5,11 +5,10 @@ const BlogCard = (props) => {
 
     const handleClick = () => {
         const blogAddress = "https://mumtazfatima.hashnode.dev/"
-        window.location.href = blogAddress+props.slug;
+        window.open(blogAddress+props.slug, "_blank");
     }
 
     useEffect(() => {
-        console.log(props.coverImage)
     })
     
     return(

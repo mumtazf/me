@@ -50,10 +50,7 @@ var requestOptions = {
 
             const result = await response.json();
 
-           console.log(result.data.user.publication.posts);
            setBlogPost(result.data.user.publication.posts);
-           console.log("before blogpost")
-           console.log(blogPost)
         }
         getBlogPosts();
 
