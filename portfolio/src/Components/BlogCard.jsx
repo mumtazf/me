@@ -1,0 +1,29 @@
+import './BlogCard.css'
+import { useEffect, useState } from "react";
+
+const BlogCard = (props) => {
+
+    const handleClick = () => {
+        const blogAddress = "https://mumtazfatima.hashnode.dev/"
+        window.location.href = blogAddress+props.slug;
+    }
+
+    useEffect(() => {
+        console.log(props.coverImage)
+    })
+    
+    return(
+        <div className="blogCard">
+            <img src = {props.coverImage} alt = "cover image for blog post"/>
+            <h2>{props.title}</h2>
+            <p>{props.dateUploaded}</p>
+            <p>{props.brief}</p>
+                <div class="center-container">
+                    <button onClick={handleClick}>Read More</button>
+                </div>
+        </div>
+    )
+
+}
+
+export default BlogCard;

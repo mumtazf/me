@@ -1,0 +1,35 @@
+.blogCard{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.blogCard img{
+    width: 100%;
+    height: 50%;
+}
+
+.blogCard button{
+    padding: 0.625em 1.25em; 
+    font-size: 1em; 
+    background-color: #3c8b3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3125em; 
+    cursor: pointer;
+}
+
+.blogCard button:hover{
+    background-color: #007bff;
+}
+
+.center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

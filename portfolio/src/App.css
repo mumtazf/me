@@ -152,6 +152,8 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  margin-bottom: 5em ;
+
 }
 
 .blog_box, .contact_box {
@@ -165,6 +167,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  margin-left: 5em;
   gap: 1.5em;
 }
 
@@ -225,6 +228,16 @@ body {
   left: 0;
   right: 0;
   text-align: center;
+}
+/* 
+.blog_cards{
+
+} */
+
+.blog_grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: 100%;
 }
 
 /* MEDIA QUERIES */
