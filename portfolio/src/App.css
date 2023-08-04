@@ -347,4 +347,11 @@ body {
     flex-direction: row;
     padding: 0;
   }
+
+  .blog_grid{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    row-gap: 10em;
+  }
+  
 }

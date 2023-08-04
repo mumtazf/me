@@ -39,7 +39,7 @@ const Experience = () =>{
 
         {
             id: 3,
-            experience: "ML Engineering Contributor",
+            experience: "ML Engineering Contributor @ MIT-IBM Watson AI Lab",
             companyName : "MIT-IBM Watson AI Lab",
             location: "Cambridge, MA",
             year: "August 2022 - December 2022",
@@ -61,11 +61,11 @@ const Experience = () =>{
 
         {
             id: 5,
-            experience: "Web Dev Teaching Assistant",
+            experience: "Web Dev Teaching Assistant @ Girls Who Code",
             companyName : "Girls Who Code",
             location: "New York City, New York (Remote)",
             year: "June 2022 - August 2022",
-            logo: "",
+            logo: '../assets/GWC_logo.png',
             technologies: "JavaScript, HTML/CSS, Accessible Web Development, Git",
             moreInfo: ["","",""]
         }, 

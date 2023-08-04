@@ -7,6 +7,12 @@
     height: 100%;
     background-color: #ffffff;
     transition: box-shadow 0.3s ease;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.blogCard:hover{
+    box-shadow: 0 1em 1em rgba(14, 134, 46, 0.641);
 }
 
 .blogCard img{
@@ -32,4 +38,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .blogCard{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        height: 100%;
+        background-color: #ffffff;
+        transition: box-shadow 0.3s ease;
+        display: block;
+        font-size: 0.8  em;
+    }
+
+    .blogCard img{
+    width: 100%;
+    height: 50%;
+}
 }
