@@ -20,10 +20,10 @@ const Experience = () =>{
             experience: "SWE Intern @ Mastercard",
             companyName : "Mastercard",
             location: "",
-            year: "2023",
+            year: "June 2023 - August 2023",
             logo: '../assets/mastercard.webp',
             technologies: "Java, Spring, Spring Boot, Hadoop, AWS S3, Git",
-            moreInfo: ["","",""]
+            moreInfo: ["I worked with data pipelines and my projects were related to automating the extraction of datasets.","I worked with Hadoop and learned about how distributed file systems and parallel computing impacts the speed of ETL processes","I also worked with Java to develop a tool that reduced memory overhead for transferring datasets."]
         },
 
         {

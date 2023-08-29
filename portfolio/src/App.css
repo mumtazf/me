@@ -336,6 +336,7 @@ body {
     align-items: center;
     min-height: 100vh; 
     flex-direction: column;
+    margin-top: 10em;
   }
 
   .contact_info {
@@ -355,4 +356,7 @@ body {
     row-gap: 10em;
   }
   
+  .experience_cards h2{
+    font-size: 1em;
+  }
 }
