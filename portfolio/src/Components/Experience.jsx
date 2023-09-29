@@ -34,11 +34,22 @@ const Experience = () =>{
             year: "June 2022 - May 2023",
             logo: '../assets/MIT_logo.webp',
             technologies: "Python, ML models - CLIP, XGBoost, Computer Vision, NLP (spaCy, NLTK, gensim), Feature engineering, Jupyter Notebook, Google Colab",
-            moreInfo: ["","",""]
+            moreInfo: ["This was a year-long fellowship that was organized by the Break Through Tech Foundation at MIT","Through this fellowship, I got hands-on experience with supervised and unsupervised ML models","I worked on 2 industry-led projects related to computer vision and recommendation systems. My first project was with the MIT-IBM Watson AI Lab where I built a mobile app that integrated CLIP model to provide real-time image to audio conversion. This app was centered around social good and its usecase was directed towards individuals with vision disabilities."]
         },
 
         {
             id: 3,
+            experience: "CS Research Mentorship Fellow",
+            companyName : "Google",
+            location: "",
+            year: "February 2023 - May 2023",
+            logo: '../assets/google_logo.webp',
+            technologies: "CS Research, ML models, Career Development",
+            moreInfo: ["This program is directed towards providing mentorship to students who are interested in CS Research", "Through this program, I learned what research responsibilities in the industry look like and the career trajectory of different researchers."]
+        },
+
+        {
+            id: 4,
             experience: "ML Engineering Contributor @ MIT-IBM Watson AI Lab",
             companyName : "MIT-IBM Watson AI Lab",
             location: "Cambridge, MA",
@@ -49,7 +60,7 @@ const Experience = () =>{
         },
 
         {
-            id: 4,
+            id: 5,
             experience: "Responsible AI Fellow @ Google",
             companyName : "Google",
             location: "Mountain View, CA (Remote)",
@@ -60,7 +71,7 @@ const Experience = () =>{
         }, 
 
         {
-            id: 5,
+            id: 6,
             experience: "Web Dev Teaching Assistant @ Girls Who Code",
             companyName : "Girls Who Code",
             location: "New York City, New York (Remote)",
@@ -70,14 +81,14 @@ const Experience = () =>{
             moreInfo: ["","",""]
         }, 
         {
-            id: 6,
+            id: 7,
             experience: "Student Researcher",
             companyName : "",
             location: "",
-            year: "",
+            year: "May 2022 - Present",
             logo: "",
-            technologies: "",
-            moreInfo: ["","",""]
+            technologies: "Python, APIs, Data scraping, NLP, Gensim, sentiment analysis",
+            moreInfo: ["I worked on a research project related to social media post recommendations and users' exploration of opposing viewpoints.","",""]
         }
 
     ]

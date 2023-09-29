@@ -32,7 +32,7 @@ const Blog = () =>{
     myHeaders.append("API_KEY", API_KEY);
 
 var graphql = JSON.stringify({
-  query: "{\r\n  user(username: \"mumtazfatima\") {\r\n    publication {\r\n      posts(page: 0) {\r\n        title\r\n        brief\r\n        slug\r\n        dateUpdated\r\n        coverImage\r\n      }\r\n    }\r\n  }\r\n}",
+query: "{\r\n  publication(host: \"mumtazfatima.hashnode.dev/\") {\r\n    posts(first: 5) {\r\n      edges {\r\n        node {\r\n          title\r\n          brief\r\n          slug\r\n          publishedAt\r\n          coverImage {\r\n            url\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
   variables: {}
 })
 var requestOptions = {
@@ -46,11 +46,11 @@ var requestOptions = {
 
     useEffect(()=> {
         const getBlogPosts = async () => {
-            const response = await fetch("https://api.hashnode.com/", requestOptions);
+            const response = await fetch("https://gql.hashnode.com/", requestOptions);
 
             const result = await response.json();
-
-           setBlogPost(result.data.user.publication.posts);
+            console.log(result.data.publication.posts.edges);
+           setBlogPost(result.data.publication.posts.edges);
         }
         getBlogPosts();
 
@@ -69,11 +69,11 @@ var requestOptions = {
           <div className="blog_grid">
             {blogPost ? 
                 blogPost.map((blog) => 
-                <BlogCard title = {blog.title}
-                            brief = {blog.brief}
-                            slug = {blog.slug}
-                            dateUpdated = {blog.dateUpdated}
-                            coverImage = {blog.coverImage}/> 
+                <BlogCard title = {blog.node.title}
+                            brief = {blog.node.brief}
+                            slug = {blog.node.slug}
+                            dateUpdated = {blog.node.publishedAt}
+                            coverImage = {blog.node.coverImage.url}/> 
                 ) 
             : null}
             </div>

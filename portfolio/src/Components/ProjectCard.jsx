@@ -54,7 +54,9 @@ const ProjectCard = ({project}) => {
         {isExpanded && (
             <div className="expanded-card-container">
                 <div className = "more-info-card">
-                    {project.moreInfo}
+                  {project.moreInfo.map(point => 
+                    <li>{point}</li>
+                )}
                 <button className="close-button" onClick={handleCloseClick}>Close</button>
                 </div>
             </div>

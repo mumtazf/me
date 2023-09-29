@@ -75,6 +75,29 @@
     width: 50%;
     height: 50%;
     background-color: white;
+    padding: 2em;
+}
+
+.more-info-card li{
+    padding: 0.2em;
+
+}
+
+.close-button{
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3b6a3b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 1em;
 }
 
 .logo img{
