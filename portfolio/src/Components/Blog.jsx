@@ -9,7 +9,20 @@ import BlogCard from './BlogCard'
 
 
 const Blog = () =>{
+
+    
     const [blogPost, setBlogPost] = useState([]);
+
+    const [visiblePosts, setvisiblePosts] = useState(4);
+
+    const handleClick = () => {
+        const totalPosts = blogPost.length;
+
+        setvisiblePosts(prevState => {
+            const newVisiblePosts = prevState + 4;
+            return newVisiblePosts <= totalPosts ? newVisiblePosts : totalPosts;
+        });
+    };
 
     const BLOG_QUERY = `{
         user(username: "victoria") {
@@ -58,7 +71,8 @@ var requestOptions = {
     },[])
 
 
-     
+    const blogPostsToShow = experienceData.slice(0,visiblePosts);
+
     return(
     <div className="blog">
         <div className="blog_box">
@@ -67,8 +81,8 @@ var requestOptions = {
 
         <div className="blog_cards">
           <div className="blog_grid">
-            {blogPost ? 
-                blogPost.map((blog) => 
+            {blogPostsToShow ? 
+                blogPostsToShow.map((blog) => 
                 <BlogCard title = {blog.node.title}
                             brief = {blog.node.brief}
                             slug = {blog.node.slug}
@@ -76,6 +90,10 @@ var requestOptions = {
                             coverImage = {blog.node.coverImage.url}/> 
                 ) 
             : null}
+
+          {visiblePosts < totalPosts.length && (
+            <button className="loadMore" onClick={handleClick}>Load More</button>
+          )}
             </div>
         </div>
     </div>

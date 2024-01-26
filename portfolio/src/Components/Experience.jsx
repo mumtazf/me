@@ -83,9 +83,9 @@ const Experience = () =>{
         {
             id: 7,
             experience: "Student Researcher",
-            companyName : "",
-            location: "",
-            year: "May 2022 - Present",
+            companyName : "UMass Amherst",
+            location: "Amherst, MA",
+            year: "May 2022 - May 2023",
             logo: "",
             technologies: "Python, APIs, Data scraping, NLP, Gensim, sentiment analysis",
             moreInfo: ["I worked on a research project related to social media post recommendations and users' exploration of opposing viewpoints.","",""]
