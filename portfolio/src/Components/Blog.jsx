@@ -90,11 +90,12 @@ var requestOptions = {
                             coverImage = {blog.node.coverImage.url}/> 
                 ) 
             : null}
-
-          {visiblePosts < blogPost.length && (
-            <button className="loadMore" onClick={handleClick}>Load More</button>
-          )}
+            <div>
+            {visiblePosts < blogPost.length && (
+              <button className="loadMore" onClick={handleClick}>Load More</button>
+            )}
             </div>
+          </div>
         </div>
     </div>
     )
