@@ -71,7 +71,7 @@ var requestOptions = {
     },[])
 
 
-    const blogPostsToShow = experienceData.slice(0,visiblePosts);
+    const blogPostsToShow = blogPost.slice(0,visiblePosts);
 
     return(
     <div className="blog">
@@ -91,7 +91,7 @@ var requestOptions = {
                 ) 
             : null}
 
-          {visiblePosts < totalPosts.length && (
+          {visiblePosts < blogPost.length && (
             <button className="loadMore" onClick={handleClick}>Load More</button>
           )}
             </div>
