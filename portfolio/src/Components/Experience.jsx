@@ -17,6 +17,16 @@ const Experience = () =>{
     const experienceData = [
         {
             id: 1,
+            experience: "Google Public Policy Fellow",
+            companyName : "Google, R Street Institute",
+            location: "",
+            year: "January 2024 - May 2024",
+            logo: '../assets/google_logo.webp',
+            technologies: "NLP, Python, Policy Briefs",
+            moreInfo: ["Published a report presented to Office of National Cyber Director (ONCD) by analyzing 80+ RFIs using NLP tools and published insights for policymakers.", "Link to report: https://www.rstreet.org/wp-content/uploads/2024/06/Final-Study-No.-306.pdf"]
+        },
+        {
+            id: 2,
             experience: "SWE Intern @ Mastercard",
             companyName : "Mastercard",
             location: "",
@@ -27,7 +37,7 @@ const Experience = () =>{
         },
 
         {
-            id: 2,
+            id: 3,
             experience: "Machine Learning Fellow @ MIT",
             companyName : "MIT",
             location: "Cambridge, MA",
@@ -38,7 +48,7 @@ const Experience = () =>{
         },
 
         {
-            id: 3,
+            id: 4,
             experience: "CS Research Mentorship Fellow",
             companyName : "Google",
             location: "",
@@ -49,18 +59,18 @@ const Experience = () =>{
         },
 
         {
-            id: 4,
+            id: 5,
             experience: "ML Engineering Contributor @ MIT-IBM Watson AI Lab",
             companyName : "MIT-IBM Watson AI Lab",
             location: "Cambridge, MA",
             year: "August 2022 - December 2022",
             logo: '../assets/mit_ibm.webp',
             technologies: "Computer Vision (CLIP model), Model Evaluation (accuracy, precision, recall, F1 score, top-K accuracy); gTTS, React Native",
-            moreInfo: ["","",""]
+            moreInfo: ["Link to project: https://github.com/mumtazf/vizable"]
         },
 
         {
-            id: 5,
+            id: 6,
             experience: "Responsible AI Fellow @ Google",
             companyName : "Google",
             location: "Mountain View, CA (Remote)",
@@ -71,7 +81,7 @@ const Experience = () =>{
         }, 
 
         {
-            id: 6,
+            id: 7,
             experience: "Web Dev Teaching Assistant @ Girls Who Code",
             companyName : "Girls Who Code",
             location: "New York City, New York (Remote)",
@@ -81,14 +91,14 @@ const Experience = () =>{
             moreInfo: ["","",""]
         }, 
         {
-            id: 7,
-            experience: "Student Researcher",
+            id: 8,
+            experience: "ML+HCI Researcher",
             companyName : "UMass Amherst",
             location: "Amherst, MA",
             year: "May 2022 - May 2023",
             logo: "",
             technologies: "Python, APIs, Data scraping, NLP, Gensim, sentiment analysis",
-            moreInfo: ["I worked on a research project related to social media post recommendations and users' exploration of opposing viewpoints.","",""]
+            moreInfo: ["Published paper in VIS4Good Workshop for IEEE VIS 2023: https://ieeexplore.ieee.org/document/10339932/", "I worked on a research project related to social media post recommendations and users' exploration of opposing viewpoints."]
         }
 
     ]

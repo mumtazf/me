@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 import axios from 'axios';
-const API_URL = 'https://api.hashnode.com';
+const API_URL = 'https://gql.hashnode.com';
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { useQuery, gql } from "@apollo/client";
 import BlogCard from './BlogCard'
@@ -87,7 +87,7 @@ var requestOptions = {
                             brief = {blog.node.brief}
                             slug = {blog.node.slug}
                             dateUpdated = {blog.node.publishedAt}
-                            coverImage = {blog.node.coverImage.url}/> 
+                            coverImage = {blog.node.coverImage?.url || '../assets/blog_default.webp'}/> 
                 ) 
             : null}
             <div>
