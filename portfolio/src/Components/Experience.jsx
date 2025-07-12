@@ -33,7 +33,7 @@ const Experience = () =>{
             year: "June 2023 - August 2023",
             logo: '../assets/mastercard.webp',
             technologies: "Java, Spring, Spring Boot, Hadoop, AWS S3, Git",
-            moreInfo: ["I worked with data pipelines and my projects were related to automating the extraction of datasets.","I worked with Hadoop and learned about how distributed file systems and parallel computing impacts the speed of ETL processes","I also worked with Java to develop a tool that reduced memory overhead for transferring datasets."]
+            moreInfo: ["I worked with data pipelines and my projects were related to automating the extraction of datasets.","Used Spark and Hadoop to enable parallel computing for ETL processes","Implemented a tool using Springboot that reduced memory overhead for transferring datasets."]
         },
 
         {
@@ -77,26 +77,26 @@ const Experience = () =>{
             year: "April 2022 - May 2022",
             logo: "../assets/google_logo.webp",
             technologies: "AI algorithms, Google Colab, ATS systems",
-            moreInfo: ["","",""]
+            moreInfo: ["Created frameworks to reduce bias in ATS algorithms by data anonymizing and noise adding techniques"]
         }, 
 
         {
             id: 7,
-            experience: "Web Dev Teaching Assistant @ Girls Who Code",
+            experience: "Web Development TA @ Girls Who Code",
             companyName : "Girls Who Code",
             location: "New York City, New York (Remote)",
             year: "June 2022 - August 2022",
             logo: '../assets/GWC_logo.png',
             technologies: "JavaScript, HTML/CSS, Accessible Web Development, Git",
-            moreInfo: ["","",""]
+            moreInfo: ["Had a lot of fun teaching JavaScript and web development to high school girls :)"]
         }, 
         {
             id: 8,
-            experience: "ML+HCI Researcher",
+            experience: "HCI and ML Student Researcher",
             companyName : "UMass Amherst",
             location: "Amherst, MA",
             year: "May 2022 - May 2023",
-            logo: "",
+            logo: "../assets/cics.webp",
             technologies: "Python, APIs, Data scraping, NLP, Gensim, sentiment analysis",
             moreInfo: ["Published paper in VIS4Good Workshop for IEEE VIS 2023: https://ieeexplore.ieee.org/document/10339932/", "I worked on a research project related to social media post recommendations and users' exploration of opposing viewpoints."]
         }
